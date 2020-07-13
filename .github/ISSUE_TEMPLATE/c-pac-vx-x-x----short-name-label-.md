@@ -8,8 +8,7 @@ assignees: ''
 ---
 
 <!-- 
-If this looks a little weird toggle between the 'write' and 'preview' tabs for markdown rendering.    
-See instructions/explanation below the Resource info table
+Toggle between the 'write' and 'preview' tabs for markdown rendering.
 -->
 
 
