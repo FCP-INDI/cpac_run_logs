@@ -12,14 +12,15 @@ Toggle between the 'write' and 'preview' tabs for markdown rendering.
 -->
 
 
-## Resource info table    
+## C-PAC Run Info 
 
 |                     |                                                                                         |
 | :------------------ | :-------------------------------------------------------------------------------------- |
+| **Description**     | replace this with a brief description of your pipeline run                              |
 | **Version**            | replace this with the C-PAC version used                                          |    
 | **Container**            | replace this with the container tag (Docker/Singularity) you used                                          |
 | **System**            | what system did you run on? local machine (Linux/MacOS)? server/cluster? AWS? Flywheel? etc.                                          |    
-| **Description**     | replace this with a brief description of your pipeline run                              |
+| **Data Size**  | how many TRs is your data? (if BOLD)                          |
 | **Results**     | did the pipeline complete successfully? any problems? any missing outputs?                              |
 
 **Include:**
