@@ -1,8 +1,8 @@
 ---
-name: C-PAC vX.X.X - [short name/label]
+name: C-PAC vX.X.X ― [short name/label]
 about: Submit run information for a completed or attempted C-PAC pipeline.
-title: ''
-labels: ''
+title: C-PAC vX.X.X ― [short name/label]
+labels: log
 assignees: ''
 
 ---
