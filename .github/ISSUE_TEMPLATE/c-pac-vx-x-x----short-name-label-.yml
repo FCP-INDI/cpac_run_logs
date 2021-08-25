@@ -1,0 +1,84 @@
+name: C-PAC vX.X.X - [short name/label]
+description: Submit run information for a completed or attempted C-PAC pipeline.
+title: C-PAC vX.X.X ― [short name/label]
+labels: [log]
+body:
+  - type: markdown
+    attributes:
+      value: "## C-PAC Run Info"
+  - type: textarea
+    attributes:
+      label: Description
+      description: A brief description of your pipeline run
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Version
+      description: The C-PAC version used
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Container
+      description: The container tag you used
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: System
+      description: What system did you run on? local machine (Linux/MacOS)? Server / cluster? AWS? Flywheel? etc.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Data Size
+      description: How many TRs is your data? (if BOLD)
+  - type: textarea
+    attributes:
+      label: Results
+      description: Did the pipeline complete successfully? Any problems? Any missing outputs?
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### Include:"
+  - type: input
+    attributes:
+      label: "Run Command:"
+      description: The command-line command you used to start the run
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Pipeline Config
+      description: can drag file directly into issue
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Data Config
+      description: can drag file directly into issue
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### Developers only:"
+  - type: textarea
+    attributes:
+      label: Default Pipeline Diff
+      description: Print-out from [cpac_pipe_diff.py](https://github.com/sgiavasis/CPAC_regtest_pack/blob/master/cpac_pipe_diff.py)
+  - type: textarea
+    attributes:
+      label: Screenshots of brain extraction and registration wireframe overlays from QC pages
+      description: If available
+  - type: textarea
+    attributes:
+      label: Node timing information
+      description: Print-out from [callback_log_time_parse.py](https://github.com/sgiavasis/CPAC_regtest_pack/blob/master/callback_log_time_parse.py)
+      placeholder: screenshots here
+  - type: textarea
+    attributes:
+      label: Extracted time series 1D and nuisance regressors 1D correlations against previous version or some benchmark
+      description: Can use [corr_two_1D.py](https://github.com/sgiavasis/CPAC_regtest_pack/blob/master/corr_two_1D.py) but heatmaps or other visualizations are good too
+      placeholder: correlations here
